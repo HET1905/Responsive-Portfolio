@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Portfolio | Portfolio Page</title>
+
+</head>
+
+<body>
+    <div>
+        <header id="mainHeader">
+            <h1 id="mainH1">Hetal Patel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- -----------------------------------Portfolio------------------------------------- -->
+        <section id="mainSectionAboutMe" class="outerSectionClass outerSectionPortfolio">
+
+            <section id="innerSectionAboutMe" class="innerSectionClass innerSectionPortfolio">
+                <header>
+                    <h2>Portfolio</h2>
+                </header>
+                <section class="imgSectionClass">
+                    <img id="img1" src="assets/images/img1.jfif" alt="Desert Image" width="150" height="150" onclick="displayImage(this.src)">
+                    <h2>Desert</h2>
+                </section>
+
+                <section class="imgSectionClass">
+                    <img src="assets/images/img2.jfif" alt="TajMahal,India" width="150" height="150" onclick="displayImage(this.src)">
+                    <h2>Taj Mahal, India</h2>
+                </section>
+
+                <section class="imgSectionClass">
+                    <img src="assets/images/img3.jfif" alt="Hyde Park, London" width="150" height="150" onclick="displayImage(this.src)">
+                    <h2>Hyde Park, London</h2>
+                </section>
+  
+                <section class="imgSectionClass">
+                <img src="assets/images/img4.jfif" alt="Moscow, Russia" width="150" height="150" onclick="displayImage(this.src)">
+                    <h2>Moscow, Rusia</h2>
+                </section>
+  
+                <section class="imgSectionClass">
+                    <img src="assets/images/img5.jfif" alt="Twin Tower, Malaysia" width="150" height="150" onclick="displayImage(this.src)">
+                    <h2>Twin Tower, Malaysia</h2>
+                </section>
+            </section>
+        </section>
+        <div id="imgOpenDiv">
+            <!-- Opens clicked image in this div -->
+            <header>
+                <span onclick="closeImg()">X</span>
+            </header>
+            <img src="" alt="" id="divImg">
+        </div>
+        <!-- ------------------------------------Footer-------------------------------------------- -->
+        <footer class="clear">
+            copyright &copy; Hetal Patel
+        </footer>
+
+    </div>
+
+    <script src="assets/js/script.js">
+    </script>
+
+</body>
+
+</html>
